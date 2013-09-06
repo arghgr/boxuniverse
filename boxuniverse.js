@@ -31,6 +31,9 @@ $(document).ready(function() {
 			boxes.append($("<div></div>").addClass("box").css("background-color",cycleRainbow()).draggable({
 				cursor: "move",
 				containment: "parent",
+				snap: true,
+				snapTolerance: 5,
+				grid: [ 5,5 ],
 				opacity: 0.7
 			}));
 			boxN += 1;
